@@ -5,8 +5,8 @@ declare(strict_types =1);
 class Curso { //classe
     public $cargaHoraria; //atributos
     public $gradeCurricular; //atributos
-    public $descricaoCurso;
-    public $nomeCurso;
+    public $descricao;
+    public $nome;
 }
 
 class Professor { //classe
