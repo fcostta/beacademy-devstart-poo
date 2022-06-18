@@ -9,5 +9,5 @@ include 'Exercicio.php';
 
 $p1 = new Professor();
 $p1->nome='Alessandro';
-$p1->cpf=08012309801;
+$p1->cpf='08012309801';
 $p1->salario='1000 reais';
