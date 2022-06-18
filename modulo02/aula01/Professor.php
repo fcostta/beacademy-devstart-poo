@@ -3,9 +3,9 @@
 declare(strict_types =1);
 
 class Professor { //classe
-    public $nome; //atributos
-    public $especializacao; //atributos
-    public $cpf;
-    public $salario;
-    public $metodoEnsino;
+    public string $nome; //atributos
+    public string $especializacao; //atributos
+    public string $cpf;
+    public float $salario;
+    public string $metodoEnsino;
 }
