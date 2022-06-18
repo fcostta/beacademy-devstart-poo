@@ -1,11 +1,11 @@
 <?php
-//quando for criar arquivos que representas classes, a primeira letra deverá ser maiuscula
+//quando for criar arquivos que representam classes, a primeira letra deverá ser maiuscula
 
 declare(strict_types =1);
 
 class Aluno { //classe
-    public $nome; //atributos
-    public $cpf; //atributos
+    public string $nome; //atributos
+    public string $cpf; //atributos
 }
 
 //Curso

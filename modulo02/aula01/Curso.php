@@ -3,8 +3,8 @@
 declare(strict_types =1);
 
 class Curso { //classe
-    public $cargaHoraria; //atributos
-    public $gradeCurricular; //atributos
-    public $descricao;
-    public $nome;
+    public int $cargaHoraria; //atributos
+    public string $gradeCurricular; //atributos
+    public string $descricao;
+    public string $nome;
 }
