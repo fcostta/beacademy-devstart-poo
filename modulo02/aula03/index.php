@@ -3,6 +3,10 @@
 ini_set('display_errors',1);
 
 include 'Produto.php';
+include 'Categoria.php';
+
+$c1 = new Categoria('Roupas', 'Roupas unisex');
+$c2 = new Categoria('Toalhas', 'Toalhas de banho, rosto e praia');
 
 $p1 = new Produto('Tenis para corrida', 299.01);
 // $p1 -> setNome ('Tenis para corrida');
