@@ -23,3 +23,5 @@ $p3 = new Produto('Calça Branca',100);
 echo var_dump($p1) . PHP_EOL;
 echo var_dump($p2) . PHP_EOL;
 echo var_dump($p3) . PHP_EOL;
+echo var_dump($c1) . PHP_EOL;
+echo var_dump($c2) . PHP_EOL;
