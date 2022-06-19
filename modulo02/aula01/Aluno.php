@@ -14,7 +14,7 @@ class Aluno { //classe
         return $this->nome;
     }
 
-    public function setNome():void
+    public function setNome(string $novoNome):void
     {
         $this->nome = $novoNome;
     }
@@ -24,7 +24,7 @@ class Aluno { //classe
         return $this->cpf;
     }
 
-    public function setCpf():void
+    public function setCpf(string $novoCpf):void
     {
         $this->cpf = $novoCpf;
     }

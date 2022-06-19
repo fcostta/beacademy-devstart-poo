@@ -16,7 +16,7 @@ class Curso { //classe
         return $this->cargaHoraria;
     }
 
-    public function setCargaHoraria():void 
+    public function setCargaHoraria(int $novaCargaHoraria):void 
     {
         $this->cargaHoraria = $novaCargaHoraria;
     }
@@ -26,7 +26,7 @@ class Curso { //classe
         return $this->gradeCurricular;
     }
 
-    public function setGradeCurricular():void 
+    public function setGradeCurricular(string $novaGradeCurricular):void 
     {
         $this->gradeCurricular = $novaGradeCurricular;
     }
@@ -36,7 +36,7 @@ class Curso { //classe
         return $this->descricao;
     }
 
-    public function setDescricao():void 
+    public function setDescricao(string $novaDescricao):void 
     {
         $this->descricao = $novaDescricao;
     }
@@ -46,7 +46,7 @@ class Curso { //classe
         return $this->nome;
     }
 
-    public function setNome():void
+    public function setNome(string $novoNome):void
     {
         $this->nome = $novoNome;
     }

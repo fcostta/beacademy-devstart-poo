@@ -17,7 +17,7 @@ class Professor { //classe
         return $this->nome;
     }
 
-    public function setNome():void
+    public function setNome(string $novoNome):void
     {
         $this->nome = $novoNome;
     }
@@ -27,7 +27,7 @@ class Professor { //classe
         return $this->cpf;
     }
 
-    public function setCpf():void
+    public function setCpf(string $novoCpf):void
     {
         $this->cpf = $novoCpf;
     }
@@ -37,7 +37,7 @@ class Professor { //classe
         return $this->especializacao;
     }
 
-    public function setEspecializacao():void
+    public function setEspecializacao(string $novoEspecializacao):void
     {
         $this->especializacao = $novoEspecializacao;
     }
@@ -47,17 +47,17 @@ class Professor { //classe
         return $this->salario;
     }
 
-    public function setSalario():void
+    public function setSalario(float $novoSalario):void
     {
         $this->salario = $novoSalario;
     }
-    //
+    
     public function getMetodoEnsino(): string
     {
         return $this->metodoEnsino;
     }
 
-    public function setMetodoEnsino():void
+    public function setMetodoEnsino(string $novoMetodoEnsino):void
     {
         $this->metodoEnsino = $novoMetodoEnsino;
     }
