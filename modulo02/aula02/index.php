@@ -4,6 +4,11 @@ ini_set('display_errors',1);
 
 include 'Produto.php';
 
+$p1 = new Produto();
+$p1 -> alterarNome ('Tenis para corrida');
+$p1 -> alterarValor(299.00);
+
+echo var_dump($p1) . PHP_EOL;
 
 // $p2=new Produto();
 // echo $p2->teste();

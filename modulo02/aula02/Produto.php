@@ -27,4 +27,12 @@ class Produto
     {
         $this->nome=$novoNome;
     }
+
+    public function alterarValor(float $novoValor): Void 
+    {
+        if ($novoValor <0) {
+            die('Ops, valor não pode ser negativo'); // die apresenta mensagem de erro
+        }
+        $this->valor=$novoValor;
+    }
 }
