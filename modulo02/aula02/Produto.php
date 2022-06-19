@@ -4,6 +4,6 @@ declare(strict_types =1);
 
 class Produto 
 { //classe
-    public string $nome; //atributos
-    public float $valor; //atributos
+    private string $nome; //atributos, no tipo public ele é acessado por qualquer código e utilizado de qualquer forma
+    private float $valor; //atributos
 }

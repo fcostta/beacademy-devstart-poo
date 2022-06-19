@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors',1);
+
 include 'Produto.php';
 
 $p1 = new Produto();
