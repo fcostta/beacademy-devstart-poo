@@ -5,11 +5,11 @@ declare(strict_types =1);
 class Professor { //classe
 
     //ATRIBUTOS
-    public string $nome; //atributos
-    public string $especializacao; //atributos
-    public string $cpf;
-    public float $salario;
-    public string $metodoEnsino;
+    private string $nome; //atributos
+    private string $especializacao; //atributos
+    private string $cpf;
+    private float $salario;
+    private string $metodoEnsino;
 
     //METODOS
         public function getNome(): string
