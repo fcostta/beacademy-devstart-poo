@@ -9,13 +9,15 @@ class Produto
     private string $nome; //atributos, no tipo public ele é acessado por qualquer código e utilizado de qualquer forma
     private float $valor; //atributos
     private string $descricao;
+    private Categoria $categoria;
 
     //MÉTODOS CONSTRUTORES (nome e valor ou valor e nome = a ordem realmente importa)
     //método magico de construção do objeto // este metodo é invocado
-    public function __construct( string $novoNome, float $novoValor ) // é preciso definir dentro do construtor as informações necessarias para a validação;
+    public function __construct( string $novoNome, float $novoValor, Categoria $categoria ) // é preciso definir dentro do construtor as informações necessarias para a validação;
     {
         $this->nome=$novoNome;
         $this->valor = $novoValor;
+        $this->categoria = $categoria;
     }
 
 
