@@ -9,7 +9,7 @@ class Produto
     private string $nome; //atributos, no tipo public ele é acessado por qualquer código e utilizado de qualquer forma
     private float $valor; //atributos
     private string $descricao;
-    private Categoria $categoria;
+    private readonly Categoria $categoria; //readonly=> read (leitura) only (apenas), ou seja, apenas leitura, não pode de forma nenhuma reeescrever (isso só funciona no php 8.1)
 
     //MÉTODOS CONSTRUTORES (nome e valor ou valor e nome = a ordem realmente importa)
     //método magico de construção do objeto // este metodo é invocado
@@ -66,4 +66,10 @@ class Produto
     {
         $this->descricao=$novaDescricao;
     }
+
+    public function setCategoria(Categoria $categoria):void
+    {
+        $this->categoria= $categoria;
+    }
+
 }
