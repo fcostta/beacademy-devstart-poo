@@ -6,4 +6,23 @@ class Gestor extends Usuario // o extends faz com que estas informações sejam 
 {
     private float $salario;
     private string $horario;
+
+    public function getSalario(): float
+    {
+        return $this->salario;
+    }
+
+    public function setSalario(float $salario): void
+    {
+        $this->salario=$salario;
+    }
+    public function getHorario(): string
+    {
+        return $this->horario;
+    }
+
+    public function setHorario(string $horario): void
+    {
+        $this->horario=$horario;
+    }
 }
