@@ -21,5 +21,4 @@ class Cliente
         $this->nome=$nome;
     }
 
-
 }
