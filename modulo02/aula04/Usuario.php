@@ -1,11 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 class Usuario
 {
     private string $nome;
     private string $email;
     private string $senha;
     private string $cpf;
+    
+
+    //O construtor será aplicado na classe usuario, para que as classes gestor e cliente herdem esse metodo 
+    public function __construct( string  $email, string $senha) //deixamos obrogatorio que seja informado e-mail e senha
+    {
+        $this->email = $email;
+        $this->senha = $senha;
+    }
 
     public function getNome(): string
     {
