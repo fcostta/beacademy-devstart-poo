@@ -7,6 +7,12 @@ class Gestor extends Usuario // o extends faz com que estas informações sejam 
     private float $salario;
     private string $horario;
 
+    //REESCRITA DE METODO CONSTRUTOR, ou seja, além do que foi definido em usuario e que é herdado pelo gestor, é definido como obrigatorio a informação de um atributo que so existe no Gestor
+    // public function __construct(float $salario)
+    // {
+    //     $this->salario = $salario;
+    // }
+
     public function getSalario(): float
     {
         return $this->salario;
