@@ -8,12 +8,12 @@ include 'Cliente.php';
 include 'Gestor.php';
 
 
-$c1=new Cliente('chiquim@email.com', '123456');
+$c1=new Cliente('chiquim@email.com', '123456'); //Construtor do Usuario
 
 $c1->setNome('Chiquim');
 $c1->setDataCadastro('01/01/2019');
 
- $g1= new Gestor('zezim@email.com', '987654', 6000);
+ $g1= new Gestor('zezim@email.com', '987654', 6000); // Construtor do Gestor
 //$g1= new Gestor(600);
 $g1->setNome('Zezim');
 // $g1->setSalario(6000);

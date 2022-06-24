@@ -16,8 +16,9 @@ class Gestor extends Usuario // o extends faz com que estas informações sejam 
     //O construtor será aplicado na classe usuario, para que as classes gestor e cliente herdem esse metodo 
     public function __construct(string  $email, string $senha, float $salario) //deixamos obrogatorio que seja informado e-mail, senha e no caso do Gestor o salario
     {
-        parent::$email = $email; // como no caso deste atributo, ele estar na classe pai (usuario), é necessario incluir o comando "parent::"
-        parent::$senha = $senha;
+        parent::setEmail($email); // como no caso deste atributo, ele estar na classe pai (usuario), é necessario incluir o comando "parent::"
+                                  // como o atributo é privado dentro da classe Usuario, para fazer o acesso ao atributo que foi encapsulado é necessario utilizar o metodo set 
+        parent::setSenha($senha);
         $this->salario = $salario;
     }
 
