@@ -10,3 +10,4 @@ include 'classes/Produto.php';
 
 include 'classes/Config/Usuario.php';
 
+echo 'Tcharam, Funcionou!';
