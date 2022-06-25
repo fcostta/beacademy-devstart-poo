@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            //psr-4 signigica PHP Standart Recommendations, padrão estabelecido no codigo e a versão da psr-4 fala sobre a padronização de como automatizar o auto carregamento
+            "Classes\\": "/classes" // estamos dizendo que nossa principal namespace é "Classes"
+        }
+    }
+}
+
+
+-----------------------------------------------------
+
+Classes foi renomeado para o nome padrão src (abreviação de source = Código)
