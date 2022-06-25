@@ -14,7 +14,7 @@ include 'vendor/autoload.php';
 
 
 use Classes\Config\Usuario;
-
+use Classes\Categoria;
 //echo 'Tcharam, Funcionou!';
 
 //$us1 = new Classes\Usuario();
@@ -22,5 +22,9 @@ use Classes\Config\Usuario;
 //$us2 = new Classes\Config\Usuario(); // comentado para ser reeescrito com o apelido
 $us2 = new Usuario();
 
+$c1 = new Categoria();
+
+
 //var_dump($us1);
 var_dump($us2);
+var_dump($c1);
