@@ -5,8 +5,10 @@ ini_set('display_errors',1);
 
 include 'Usuario.php'; // este include tem que ser primeiro por que as classes Cliente e Gestor herdam infomações de usuario (ATRIBUTOS E METODOS SÃO HERDADOS)
 include 'Cliente.php';
+include 'ClienteVip.php';
 include 'Gestor.php';
 include 'GestorGeral.php';
+
 
 
 $c1=new Cliente('chiquim@email.com', '123456'); //Construtor do Usuario
@@ -22,7 +24,12 @@ $g1->setNome('Zezim');
 
 $gg1= new GestorGeral('maria@email.com', '678345', 9000);
 
+//$us = new Usuario('hacker@email.com', '1230987');
+
+$clienteVip = new ClienteVip('clientevip@email.com', '123123');
 
 var_dump($c1);
 var_dump($g1);
 var_dump($gg1);
+//var_dump($us);
+var_dump($clienteVip);
