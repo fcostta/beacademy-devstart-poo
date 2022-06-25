@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-class Validar
+abstract class Validar // ao utilizar o termo "ABSTRACT", a classe se torna abstrata e com isso não precisa e ela não pode mais ser instanciada pois  se torna um metodo estatio
 {
     public static function validarCpf (string $cpf):void // para transformar este metodo em estatico, vamos informar o comando "static"
     {
