@@ -4,5 +4,8 @@
             
             "Classes\\": "src/"
         }
+    },
+    "require": {
+        "dompdf/dompdf": "^2.0"
     }
 }
