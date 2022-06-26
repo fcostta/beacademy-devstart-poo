@@ -12,4 +12,10 @@ class IndexController
         //include dirname(__DIR__) . '/View/teste.php'; // dirname() pega a pasta um nivel acima
         include dirname(__DIR__) . '/View/index/index.php';
     }
+
+    public function loginAction(): void
+    {
+        include dirname(__DIR__) . '/View/index/login.php';
+    }
+
 }
