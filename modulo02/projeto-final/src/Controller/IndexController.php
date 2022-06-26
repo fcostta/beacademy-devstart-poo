@@ -9,6 +9,6 @@ class IndexController
     public function indexAction(): void
     {
         //echo dirname(__DIR__);
-        include dirname(__DIR__) . '/View/teste.php';
+        include dirname(__DIR__) . '/View/teste.php'; // dirname() pega a pasta um nivel acima
     }
 }
