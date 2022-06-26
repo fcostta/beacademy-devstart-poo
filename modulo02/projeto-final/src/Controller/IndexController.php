@@ -8,6 +8,7 @@ class IndexController
 {
     public function indexAction(): void
     {
-        echo 'Ola mundo, estou dentro do controller';
+        //echo dirname(__DIR__);
+        include dirname(__DIR__) . '/View/teste.php';
     }
 }
