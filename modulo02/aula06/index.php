@@ -36,7 +36,14 @@ use Dompdf\Dompdf;
 
 // instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->loadHtml('<h1>Olá mundo, estou aprendendo PHP</h1>');
+
+$html='';
+
+for ($n=0; $n<10; $n++){
+    $html .= 'Ó o pente! <br>';
+
+}
+$dompdf->loadHtml('<h1>Olá mundo, estou aprendendo PHP</h1>' . $html);
 
 // (Optional) Setup the paper size and orientation
 $dompdf->setPaper('A4', 'landscape');
