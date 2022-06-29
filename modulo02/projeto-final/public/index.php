@@ -7,18 +7,20 @@ include '../vendor/autoload.php';
 use App\Controller\IndexController;
 use App\Controller\ProductController;
 use App\Controller\CategoryController;
-
+use App\Controller\ErrorController;
 
 $url= explode('?',$_SERVER['REQUEST_URI'])[0];
-//echo $url;
 
-$c= new IndexController();
-//$c->indexAction();
-$c->loginAction();
-
-$p=new ProductController();
-$p->listAction();
-$p->addAction();
-$p->editAction();
-
-echo 'Ok, Funcionando';
+if ($url === '/'){
+    $c= new IndexController();
+    $c->indexAction();
+} elseif ($url === '/login'){
+    $c= new IndexController();
+    $c->loginAction();
+} elseif ($url === '/produtos') {
+    $p = new ProductController();
+    $p->listAction();
+} else {
+    $error= new ErrorController();
+    $error-> notFoundAction();
+}
