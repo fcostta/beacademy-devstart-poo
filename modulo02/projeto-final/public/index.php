@@ -41,7 +41,9 @@ if (false === isset($routes[$url])){
 }
 
 $controllerName=$routes[$url]['controller'];
-echo $controllerName;
+//echo $controllerName;
+$methodName=$routes[$url]['method'];
+(new $controllerName())->$methodName();
 
 var_dump($routes[$url]);
 
