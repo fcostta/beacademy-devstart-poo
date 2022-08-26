@@ -1,20 +1,11 @@
 <?php
 
-declare(strict_types=1);
+ini_set('display_erros', 1);
 
-class Produto
-{
-    
-    //atributos (caracteristicas)
-    private string $nome;
-    private float $valor;
+include 'ControllerProducts.php';
 
-    // métodos (o que a classe pode fazer)
-    public function getNome(): string
-    {
-        return $this->$nome;
+$testenome = 'Fabio';
 
-    }
+$produto_1 = new Produto();
 
-
-}
+echo $produto_1->getNome($testenome);
