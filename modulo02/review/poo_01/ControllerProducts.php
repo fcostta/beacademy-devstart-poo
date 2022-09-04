@@ -1,19 +1,20 @@
 <?php
 
-declare(strict_types = 1)
+declare(strict_types=1)
 ;
 
 class Produto
 {
 
     //atributos (caracteristicas, são as coisas que uma classe tem)
-    private string $nome;
-    private float $valor;
+    private string $name;
+    private float $value;
+    private string $testename;
 
     // métodos (o que a classe pode fazer)
-    public function getNome(string $testenome): string
+    public function getNome(string $name): string
     {
-        return $this->$testenome;
+        return $this->name = $name;
 
     }
 

@@ -1,12 +1,11 @@
 <?php
 
-ini_set('display_erros', 1);
+ini_set('display_errors', 1);
 
 include 'ControllerProducts.php';
+include 'ControllerCategory.php';
 
-$testenome = 'Fabio';
+$product_01 = new Produto('Biscoito');
+$product_01->getNome('Fabio');
 
-$produto_1 = new Produto();
-
-echo $produto_1->getNome($testenome);
-
+var_dump($product_01);
